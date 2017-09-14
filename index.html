@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap 模板</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!-- 引入 Bootstrap -->
+    <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+    <!--[if lt IE 9]>          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>       <![endif]-->
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+<div class="container">
+
+    <h1>Hello, world!</h1>
+    <p class="lead">每一个成功的CEO身后都曾经有过一群爱骂人的狗~</p>
+    <div class="row">
+        <h1>排序前<small>排序前哦</small></h1>
+        <div class="col-md-4" style="background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            我在左边
+        </div>
+        <div class="col-md-8" style="background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            我在右边
+        </div>
+    </div><br>
+    <div class="row">
+        <p>排序后</p>
+        <div class="col-md-4 col-md-push-8"
+             style="background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444,
+         inset -1px 1px 1px #444;">
+            我在左边
+        </div>
+        <div class="col-md-8 col-md-pull-4"
+             style="background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444,
+         inset -1px 1px 1px #444;">
+            我在右边
+        </div>
+    </div>
+</div>
+<hr>
+<small>本行内容是在标签内</small><br>
+<strong>本行内容是在标签内</strong><br>
+<em>本行内容是在标签内，并呈现为斜体</em><br>
+<p class="text-left">向左对齐文本</p>
+<p class="text-center">居中对齐文本</p>
+<p class="text-right">向右对齐文本</p>
+<p class="text-muted">本行内容是减弱的</p>
+<p class="text-primary">本行内容带有一个 primary class</p>
+<p class="text-success">本行内容带有一个 success class</p>
+<p class="text-info">本行内容带有一个 info class</p>
+<p class="text-warning">本行内容带有一个 warning class</p>
+<p class="text-danger">本行内容带有一个 danger class</p>
+<hr>
+<abbr title="World Wide Web">WWW</abbr><br><abbr title="Real Simple Syndication" class="initialism">RSS</abbr><br>
+<abbr title="成功就是你说了算，别人无力反驳">成功</abbr><br><abbr title="失败就是别人说什么你得听着" class="initialism">失败</abbr>
+<hr>
+<address>
+    <strong>Some Company, Inc.</strong><br>
+    007 street<br>
+    Some City, State XXXXX<br>
+    <abbr title="Phone">P:</abbr> (123) 456-7890</address><address>
+    <strong>Full Name</strong><br>
+    <a href="mailto:#">mailto@somedomain.com</a>
+</address>
+<hr>
+<blockquote>这是一个带有源标题的引用。<small>Someone famous in <cite title="Source Title">Source Title</cite></small></blockquote>
+
+<hr>
+<!--引用完成了 该下一节列表了-->
+bootstrap的列表样式 ： ol，ul，ul class="list-unstyled"，ul class="list-inline"，
+<ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ol>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+<ul class="list-unstyled">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+<ul class="list-inline">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+定义列表：
+<pre>
+<xmp>
+    <dl>
+        <dt>Description 1</dt> <dd>Item 1</dd>
+        <dt>Description 2</dt> <dd>Item 2</dd>
+    </dl>
+</xmp>
+</pre>
+定义列表：解析后
+<dl>
+    <dt>Description 1</dt> <dd>Item 1</dd>
+    <dt>Description 2</dt> <dd>Item 2</dd>
+</dl>
+水平的定义列表：
+<pre>
+<xmp>
+<dl class="dl-horizontal">
+    <dt>Description 1</dt>  <dd>Item 1</dd>
+    <dt>Description 2</dt>  <dd>Item 2</dd>
+</dl>
+</xmp>
+</pre>
+水平的定义列表：解析后
+<dl class="dl-horizontal">
+    <dt>Description 1</dt>  <dd>Item 1</dd>
+    <dt>Description 2</dt>  <dd>Item 2</dd>
+</dl>
+<xmp>.pre-scrollable	使 <pre> 元素可滚动 scrollable</pre></xmp>
+<pre class="scrollable" style="height: 70px;">
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    11
+    12
+</pre>
+<hr>
+表格-基本表格：   .table-condensed 类让表格更加紧凑、  .table-striped 类在 tbody 内添加斑马线形式的条纹 ( IE8 不支持)、.table-hover 类启用表格中tbody 上的行的悬停效果、
+.table-bordered class，您将看到每个元素周围都有边框，且占整个表格是圆角的、通过把任意的 .table 包在 .table-responsive class 内，您可以让表格水平滚动以适应小型设备（小于 768px）。
+当在大于 768px 宽的大型设备上查看时，您将看不到任何的差别。
+<table class="table table-condensed table-hover table-bordered table-responsive">
+    <caption>基本的表格布局</caption>
+    <thead>
+    <tr>
+        <th>名称</th>
+        <th>城市</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Tanmay</td>
+        <td>Bangalore</td>
+    </tr>
+    <tr>
+        <td>Sachin</td>
+        <td>Mumbai</td>
+    </tr>
+    </tbody>
+</table>
+<hr>
+Bootstrap 提供了下列类型的表单布局：
+垂直表单（默认）
+内联表单
+水平表单
+<form role="form">
+    <div class="form-group">
+        <label for="name">名称</label>
+        <input type="text" class="form-control" id="name1"
+               placeholder="请输入名称">
+    </div>
+    <div class="form-group">
+        <label for="inputfile">文件输入</label>
+        <input type="file" id="inputfile1">
+        <p class="help-block">这里是块级帮助文本的实例。</p>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"> 请打勾      </label>
+    </div>
+    <button type="submit" class="btn btn-default">提交</button>
+</form>
+<hr>
+    内联表单
+
+    如果需要创建一个表单，它的所有元素是内联的，向左对齐的，标签是并排的，请向 form 标签添加 class .form-inline。
+<form class="form-inline" role="form">
+    <div class="form-group">
+        <label class="sr-only" for="name">名称</label>
+        <input type="text" class="form-control" id="name"
+               placeholder="请输入名称">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="inputfile">文件输入</label>
+        <input type="file" id="inputfile">
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"> 请打勾      </label>
+    </div>
+    <button type="submit" class="btn btn-default">提交</button>
+</form>
+    <br>
+    <hr>
+    水平表单
+
+    水平表单与其他表单不仅标记的数量上不同，而且表单的呈现形式也不同。如需创建一个水平布局的表单，请按下面的几个步骤进行：
+    向父 form 元素添加 class .form-horizontal。
+    把标签和控件放在一个带有 class .form-group 的 div 中。
+        向标签添加 class .control-label。
+
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label">名字</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="firstname"
+                   placeholder="请输入名字">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="lastname" class="col-sm-2 control-label">姓</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="lastname"
+                   placeholder="请输入姓">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> 请记住我            </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">登录</button>
+        </div>
+    </div>
+</form>
+<hr>
+    文本框（Textarea）
+    当您需要进行多行输入的时，则可以使用文本框 textarea。必要时可以改变 rows 属性（较少的行 = 较小的盒子，较多的行 = 较大的盒子）。
+<form role="form">
+    <div class="form-group">
+        <label for="name">文本框</label>
+        <textarea class="form-control" rows="3"></textarea>
+    </div>
+</form>
+<hr>
+    复选框（（Checkbox）和单选框（Radio）
+
+    复选框和单选按钮用于让用户从一系列预设置的选项中进行选择。
+    当创建表单时，如果您想让用户从列表中选择若干个选项时，请使用 checkbox。如果您限制用户只能选择一个选项，请使用 radio。
+    对一系列复选框和单选框使用 .checkbox-inline 或 .radio-inline class，控制它们显示在同一行上。
+    下面的实例演示了这两种类型（默认和内联）：
+<label for="name">默认的复选框和单选按钮的实例</label><div class="checkbox">
+<label><input type="checkbox" value="">选项 1</label></div><div class="checkbox">
+<label><input type="checkbox" value="">选项 2</label></div><div class="radio">
+<label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1"
+           value="option1" checked> 选项 1   </label></div><div class="radio">
+<label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2"
+           value="option2">
+    选项 2 - 选择它将会取消选择选项 1   </label></div><label for="name">内联的复选框和单选按钮的实例</label>
+    <div>
+<label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox1" value="option1"> 选项 1   </label>
+<label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox2" value="option2"> 选项 2   </label>
+<label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox3" value="option3"> 选项 3   </label>
+<label class="checkbox-inline">
+    <input type="radio" name="optionsRadiosinline" id="optionsRadios3"
+           value="option1" checked> 选项 1   </label>
+<label class="checkbox-inline">
+    <input type="radio" name="optionsRadiosinline" id="optionsRadios4"
+           value="option2"> 选项 2   </label>
+    </div>
+
+<hr>
+    选择框（Select）
+
+    当您想让用户从多个选项中进行选择，但是默认情况下只能选择一个选项时，则使用选择框。
+    使用 select 展示列表选项，通常是那些用户很熟悉的选择列表，比如州或者数字。
+    使用 multiple="multiple" 允许用户选择多个选项。
+    下面的实例演示了这两种类型（select 和 multiple）：
+<form role="form">
+    <div class="form-group">
+        <label for="name">选择列表</label>
+        <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+
+        <label for="name">可多选的选择列表</label>
+        <select multiple class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+</form>
+<hr>
+    静态控件
+
+    当您需要在一个水平表单内的表单标签后放置纯文本时，请在 <p> 上使用 class .form-control-static。
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+<p class="form-control-static">email@example.com</p>
+</div>
+</div>
+<div class="form-group">
+<label for="inputPassword" class="col-sm-2 control-label">密码</label>
+<div class="col-sm-10">
+    <input type="password" class="form-control" id="inputPassword"
+           placeholder="请输入密码">
+</div>
+</div>
+</form>
+<hr>
+表单控件状态
+
+除了 :focus 状态（即，用户点击 input 或使用 tab 键聚焦到 input 上），Bootstrap 还为禁用的输入框定义了样式，并提供了表单验证的 class。
+输入框焦点
+
+当输入框 input 接收到 :focus 时，输入框的轮廓会被移除，同时应用 box-shadow。
+禁用的输入框 input
+
+如果您想要禁用一个输入框 input，只需要简单地添加 disabled 属性，这不仅会禁用输入框，还会改变输入框的样式以及当鼠标的指针悬停在元素上时鼠标指针的样式。
+禁用的字段集 fieldset
+
+对 fieldset 添加 disabled 属性来禁用 fieldset 内的所有控件。
+    验证状态
+
+    Bootstrap 包含了错误、警告和成功消息的验证样式。只需要对父元素简单地添加适当的 class（.has-warning、 .has-error 或 .has-success）即可使用验证状态。
+    下面的实例演示了所有控件状态：
+<form class="form-horizontal" role="form">
+<div class="form-group">
+    <label class="col-sm-2 control-label">聚焦</label>
+    <div class="col-sm-10">
+        <input class="form-control" id="focusedInput" type="text"
+               value="该输入框获得焦点...">
+    </div>
+</div>
+<div class="form-group">
+    <label for="inputPassword" class="col-sm-2 control-label">
+        禁用      </label>
+    <div class="col-sm-10">
+        <input class="form-control" id="disabledInput" type="text"
+               placeholder="该输入框禁止输入..." disabled>
+    </div>
+</div>
+<fieldset disabled>
+    <div class="form-group">
+        <label for="disabledTextInput"  class="col-sm-2 control-label">
+            禁用输入（Fieldset disabled）         </label>
+        <div class="col-sm-10">
+            <input type="text" id="disabledTextInput" class="form-control"
+                   placeholder="禁止输入">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="disabledSelect"  class="col-sm-2 control-label">
+            禁用选择菜单（Fieldset disabled）         </label>
+        <div class="col-sm-10">
+            <select id="disabledSelect" class="form-control">
+                <option>禁止选择</option>
+            </select>
+        </div>
+    </div>
+</fieldset>
+<div class="form-group has-success">
+    <label class="col-sm-2 control-label" for="inputSuccess">
+        输入成功      </label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputSuccess">
+    </div>
+</div>
+<div class="form-group has-warning">
+    <label class="col-sm-2 control-label" for="inputWarning">
+        输入警告      </label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputWarning">
+    </div>
+</div>
+<div class="form-group has-error">
+    <label class="col-sm-2 control-label" for="inputError">
+        输入错误      </label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputError">
+    </div>
+</div>
+</form>
+<hr>
+表单控件大小
+
+您可以分别使用 class .input-lg 和 .col-lg-* 来设置表单的高度和宽度。下面的实例演示了这点：
+<form role="form">
+<div class="form-group">
+    <input class="form-control input-lg" type="text"
+           placeholder=".input-lg">
+</div>
+
+<div class="form-group">
+    <input class="form-control" type="text" placeholder="默认输入">
+</div>
+
+<div class="form-group">
+    <input class="form-control input-sm" type="text"
+           placeholder=".input-sm">
+</div>
+<div class="form-group">
+</div>
+<div class="form-group">
+    <select class="form-control input-lg">
+        <option value="">.input-lg</option>
+    </select>
+</div>
+<div class="form-group">
+    <select class="form-control">
+        <option value="">默认选择</option>
+    </select>
+</div>
+<div class="form-group">
+    <select class="form-control input-sm">
+        <option value="">.input-sm</option>
+    </select>
+</div>
+
+<div class="row">
+    <div class="col-lg-2">
+        <input type="text" class="form-control" placeholder=".col-lg-2">
+    </div>
+    <div class="col-lg-3">
+        <input type="text" class="form-control" placeholder=".col-lg-3">
+    </div>
+    <div class="col-lg-4">
+        <input type="text" class="form-control" placeholder=".col-lg-4">
+    </div>
+</div>
+</form>
+<hr>
+表单帮助文本
+
+Bootstrap 表单控件可以在输入框 input 上有一个块级帮助文本。为了添加一个占用整个宽度的内容块，请在 <input> 后使用 .help-block。下面的实例演示了这点：
+<form role="form">
+<span>帮助文本实例</span>
+<input class="form-control" type="text" placeholder="">
+<span class="help-block">一个较长的帮助文本块，超过一行，
+需要扩展到下一行。本实例中的帮助文本总共有两行。</span>
+</form>
+<hr>
+Bootstrap 按钮
+
+本章将通过实例讲解如何使用 Bootstrap 按钮。任何带有 class .btn 的元素都会继承圆角灰色按钮的默认外观。但是 Bootstrap 提供了一些选项来定义按钮的样式，具体如下表所示：
+以下样式可用于<code>  &lt;a&gt;,  &lt;button&gt;, 或  &lt;input&gt; </code> 元素上：
+下面的实例演示了所有的按钮 class：
+<!-- 标准的按钮 --><button type="button" class="btn btn-default">默认按钮</button>
+<!-- 提供额外的视觉效果，标识一组按钮中的原始动作 --><button type="button" class="btn btn-primary">原始按钮</button>
+<!-- 表示一个成功的或积极的动作 --><button type="button" class="btn btn-success">成功按钮</button>
+<!-- 信息警告消息的上下文按钮 --><button type="button" class="btn btn-info">信息按钮</button>
+<!-- 表示应谨慎采取的动作 --><button type="button" class="btn btn-warning">警告按钮</button>
+<!-- 表示一个危险的或潜在的负面动作 --><button type="button" class="btn btn-danger">危险按钮</button>
+<!-- 并不强调是一个按钮，看起来像一个链接，但同时保持按钮的行为 --><button type="button" class="btn btn-link">链接按钮</button>
+按钮大小
+下表列出了获得各种大小按钮的 class：
+Class	描述
+.btn-lg	这会让按钮看起来比较大。
+.btn-sm	这会让按钮看起来比较小。
+.btn-xs	这会让按钮看起来特别小。
+.btn-block	这会创建块级的按钮，会横跨父元素的全部宽度。
+<p>
+<button type="button" class="btn btn-primary btn-lg">
+    大的原始按钮   </button>
+<button type="button" class="btn btn-default btn-lg">
+    大的按钮   </button></p><p>
+<button type="button" class="btn btn-primary">
+    默认大小的原始按钮   </button>
+<button type="button" class="btn btn-default">
+    默认大小的按钮   </button></p><p>
+<button type="button" class="btn btn-primary btn-sm">
+    小的原始按钮   </button>
+<button type="button" class="btn btn-default btn-sm">
+    小的按钮   </button></p><p>
+<button type="button" class="btn btn-primary btn-xs">
+    特别小的原始按钮   </button>
+<button type="button" class="btn btn-default btn-xs">
+    特别小的按钮   </button></p><p>
+<button type="button" class="btn btn-primary btn-lg btn-block">
+    块级的原始按钮   </button>
+<button type="button" class="btn btn-default btn-lg btn-block">
+    块级的按钮   </button>
+</p>
+<hr>
+按钮状态
+
+Bootstrap 提供了激活、禁用等按钮状态的 class，下面将进行详细讲解。
+激活状态
+
+按钮在激活时将呈现为被按压的外观（深色的背景、深色的边框、阴影）。
+下表列出了让按钮元素和锚元素呈激活状态的 class：
+元素	Class
+按钮元素	添加 .active class 来显示它是激活的。
+锚元素	添加 .active class 到 &lt;a&gt; 按钮来显示它是激活的。
+注意：该 class 只会改变 &lt;a&gt; 的外观，不会改变它的功能。在这里，您需要使用自定义的 JavaScript 来禁用链接。
+下面的实例演示了这点：
+<p>
+<button type="button" class="btn btn-default btn-lg">
+    默认按钮   </button>
+<button type="button" class="btn btn-default btn-lg" disabled="disabled">
+    禁用按钮   </button></p><p>
+<button type="button" class="btn btn-primary btn-lg ">
+    原始按钮   </button>
+<button type="button" class="btn btn-primary btn-lg" disabled="disabled">
+    禁用的原始按钮   </button></p><p>
+<a href="#" class="btn btn-default btn-lg" role="button">
+    链接   </a>
+<a href="#" class="btn btn-default btn-lg disabled" role="button">
+    禁用链接   </a></p><p>
+<a href="#" class="btn btn-primary btn-lg" role="button">
+    原始链接   </a>
+<a href="#" class="btn btn-primary btn-lg disabled" role="button">
+    禁用的原始链接   </a>
+</p>
+<hr>
+按钮标签
+您可以在 &lt;a&gt;、&lt;button&gt; 或 &lt;input&gt; 元素上使用按钮 class。但是建议您在 &lt;button&gt; 元素上使用按钮 class，避免跨浏览器的不一致性问题。
+    下面的实例演示了这点：
+<br>
+<a class="btn btn-default" href="#" role="button">链接</a>
+<button class="btn btn-default" type="submit">按钮</button>
+<input class="btn btn-default" type="button" value="输入">
+<input class="btn btn-default" type="submit" value="提交">
+<hr>
+Bootstrap 图片
+
+在本章中，我们将学习 Bootstrap 对图片的支持。Bootstrap 提供了三个可对图片应用简单样式的 class：
+.img-rounded：添加 border-radius:6px 来获得图片圆角。
+.img-circle：添加 border-radius:500px 来让整个图片变成圆形。
+.img-thumbnail：添加一些内边距（padding）和一个灰色的边框。
+请看下面的实例演示：<br>
+<!--      img-responsive    img-responsive    img-responsive          -->
+
+<img src="images/1.jpg"     class="img-rounded img-responsive">
+<img src="images/2.jpg"     class="img-circle img-responsive">
+<img src="images/3.png"     class="img-thumbnail img-responsive">
+
+<hr>
+<!--文本颜色等-->
+Bootstrap 辅助类
+
+本章将讨论 Bootstrap 中的一些可能会派上用场的辅助类。
+文本
+
+以下不同的类展示了不同的文本颜色。如果文本是个链接鼠标移动到文本上会变暗：<br/>&nbsp;
+<p class="text-muted">该段落使用了样式 "text-muted"。</p>
+<a class="text-muted" href="http://www.w3cschool.cn">链接使用了样式 "text-muted"。</a>
+<hr>
+<p class="text-primary">该段落使用了样式 "text-primary"。</p>
+<a class="text-primary" href="http://www.w3cschool.cn">链接使用了样式 "text-primary"。</a>
+<hr>
+<p class="text-success">该段落使用了样式 "text-success"。</p>
+<a class="text-success" href="http://www.w3cschool.cn">链接使用了样式 "text-success"。</a>
+<hr>
+<p class="text-info">该段落使用了样式 "text-info"。</p>
+<a class="text-info" href="http://www.w3cschool.cn">链接使用了样式 "text-info"。</a>
+<hr>
+<p class="text-warning">该段落使用了样式 "text-warning"。</p>
+<a class="text-warning" href="http://www.w3cschool.cn">链接使用了样式 "text-warning"。</a>
+<hr>
+<p class="text-danger">该段落使用了样式 "text-danger"。</p>
+<a class="text-danger" href="http://www.w3cschool.cn">链接使用了样式 "text-danger"。</a>
+<hr>
+背景
+
+以下不同的类展示了不同的背景颜色。 如果文本是个链接鼠标移动到文本上会变暗：
+<br/>&nbsp;
+<p class="bg-primary">该段落使用了类 "bg-primary"。</p>
+<a class="bg-primary" href="/index">该链接使用了类 "bg-primary"。</a>
+<hr>
+<p class="bg-success">该段落使用了类 "bg-success"。</p>
+<a class="bg-success" href="/index">该链接使用了类 "bg-success"。</a>
+<hr>
+<p class="bg-info">该段落使用了类 "bg-info"。</p>
+<a class="bg-info" href="/index">该链接使用了类 "bg-info"。</a>
+<hr>
+<p class="bg-warning">该段落使用了类 "bg-warning"。</p>
+<a class="bg-warning" href="/index">该链接使用了类 "bg-warning"。</a>
+<hr>
+<p class="bg-danger">该段落使用了类 "bg-danger"。</p>
+<a class="bg-danger" href="/index">该链接使用了类 "bg-danger"。</a>
+<hr>
+其他
+<div class="pull-left">元素浮动到左侧</div>
+<div class="pull-right">元素浮动到右侧</div>
+<hr>
+<div class="center-block" style="width:150px;background-color:#ccc;">该 div 显示在中间</div>
+<hr>
+.clearfix	清除浮动
+<hr>
+<p> .show 类强制一个元素显示:</p>
+<p class="show">该段落强制显示</p>
+<p> .hidden 类强制一个元素隐藏 :</p>
+<p class="hidden">该段落强制隐藏</p>
+<hr>
+<p> .sr-only 类除了屏幕阅读器外，其他设备上都隐藏元素:</p>
+<a class="sr-only" href="#">跳转到主要内容</a>
+<p>与 .sr-only 类结合使用，在元素获取焦点时显示(如：键盘操作的用户):</p>
+<a class="sr-only sr-only-focusable" href="#">跳转到主要内容</a>
+<hr>
+<p> .text-only 类将页面元素所包含的文本内容替换为背景图:</p>
+<div class="text-hide">在 div 元素中插入一些文本。</div>
+<hr>
+<p> .close 类可以显示一个关闭按钮。</p>
+<button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">关闭</span></button>
+<hr>
+<p> .caret 类显示了一个下拉的功能: <span class="caret"></span></p>
+<p> .caret 类在按钮中使用：</p>
+<div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Menu <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu">
+        <li><a href="#">一个链接</a></li>
+        <li><a href="#">另一个链接 link</a></li>
+        <li><a href="#">其他功能</a></li>
+    </ul>
+</div>
+<hr>
+更多实例
+
+关闭图标
+
+使用通用的关闭图标来关闭模态框和警告框。使用 class close 得到关闭图标。
+<p>关闭图标实例   <button type="button" class="close" aria-hidden="true">
+    &times;   </button></p>
+<hr>
+插入符
+
+使用插入符表示下拉功能和方向。使用带有 class caret 的 span元素得到该功能。
+<p>插入符实例   <span class="caret"></span></p>
+<hr>
+Bootstrap 响应式实用工具
+
+Bootstrap 提供了一些辅助类，以便更快地实现对移动设备友好的开发。这些可以通过媒体查询结合大型、小型和中型设备，实现内容对设备的显示和隐藏。
+需要谨慎使用这些工具，避免在同一个站点创建完全不同的版本。响应式实用工具目前只适用于块和表切换。
+<div class="container" style="padding: 40px;">
+    <div class="row visible-on">
+        <div class="col-xs-6 col-sm-3" style="background-color: #dedef8;          box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            <span class="hidden-xs">特别小型</span>
+            <span class="visible-xs">✔ 在特别小型设备上可见</span>
+        </div>
+        <div class="col-xs-6 col-sm-3" style="background-color: #dedef8;          box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            <span class="hidden-sm">小型</span>
+            <span class="visible-sm">✔ 在小型设备上可见</span>
+        </div>
+        <div class="clearfix visible-xs"></div>
+        <div class="col-xs-6 col-sm-3" style="background-color: #dedef8;          box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            <span class="hidden-md">中型</span>
+            <span class="visible-md">✔ 在中型设备上可见</span>
+        </div>
+        <div class="col-xs-6 col-sm-3" style="background-color: #dedef8;          box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            <span class="hidden-lg">大型</span>
+            <span class="visible-lg">✔ 在大型设备上可见</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</div>
+</body>
+</html>
